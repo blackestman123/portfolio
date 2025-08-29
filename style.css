@@ -12,14 +12,20 @@
 
 header {
 	background-color: hsl(27, 97%, 54%);
-	 font-family: "Public Sans", sans-serif;
-
 	min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+
 }
+
+header .hero {
+	background-color: rgb(247, 164, 0);
+	height: calc(100vh - 3rem)
+}
+
+header nav {
+height: 1rem;
+}
+	
+
 
 section{
 	border-top: 1px solid white;
@@ -43,4 +49,45 @@ nav{
 nav a:hover{
 	background-color: rgb(251, 251, 251);
 
+}
+
+/* .hero */
+
+.hero {
+position: relative;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.hero .image,
+.hero .texte{}
+
+.hero .image {
+	position: absolute
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+	
+
+.hero .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+.hero .texte {
+	background-color: black;
+	z-index: 2;
+}
+
+nav{
+	position: sticky;
+	top: 0;
+	z-index: 99;
 }
