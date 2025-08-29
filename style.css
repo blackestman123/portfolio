@@ -1,13 +1,16 @@
-
+/* - - TYPO - - - - - - -*/
 
 @import url("reset.css");
 @import url("utility.css");
+
+
+/* - - TYPO - - - - - - -*/
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Noto+Serif+JP:wght@200..900&family=Patrick+Hand&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
-body {
+header {
 	background-color: hsl(27, 97%, 54%);
 	 font-family: "Public Sans", sans-serif;
 
@@ -16,9 +19,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+}
 
-
-
+section{
+	border-top: 1px solid white;
+	min-height: 100vh;
 }
 
 h1{
@@ -29,3 +34,13 @@ h2{
 	max-width: 25ch;
 	}
 a {color: inherit;}
+/* - - TYPO - - - - - - -*/
+
+nav{
+	background-color: rgb(255, 178, 101);
+}
+
+nav a:hover{
+	background-color: rgb(251, 251, 251);
+
+}
